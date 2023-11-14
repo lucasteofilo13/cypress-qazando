@@ -13,21 +13,21 @@ jobs:
     # maquina que será executado
     runs-on: ubuntu-latest
 
-  #passo a passo para rodar os testes
-  steps:
-    # clone do projeto
-    - name: Checkout/Clone do projeto
-      uses: actions/checkout@v3
+    #passo a passo para rodar os testes
+    steps:
+      # clone do projeto
+      - name: Checkout/Clone do projeto
+        uses: actions/checkout@v3
 
-    # exemplo de execução no terminal
-    - name: instalar dependencias do projeto
-      run: echo Lucas Teofilo
+      # exemplo de execução no terminal
+      - name: instalar dependencias do projeto
+        run: echo Lucas Teofilo
 
-    # execução e config do projeto
-    - name: Run testes
-      uses: cypres-io/github-actions@v5
-      with:
-        record: true
-      env:
-        CYPRES_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+      # execução e config do projeto
+      - name: Run testes
+        uses: cypres-io/github-actions@v5
+        with:
+          record: true
+        env:
+          CYPRES_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
