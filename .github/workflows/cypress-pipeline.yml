@@ -10,8 +10,8 @@ jobs:
   # o que vai ser feito nesse pipeline
   # só teremos um job: rodar os testes
   cypress-run:
-  # maquina que será executado
-  runs-on: ubuntu-latest
+    # maquina que será executado
+    runs-on: ubuntu-latest
 
   #passo a passo para rodar os testes
   steps:
