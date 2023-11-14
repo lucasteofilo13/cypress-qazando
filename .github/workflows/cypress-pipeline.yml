@@ -20,12 +20,12 @@ jobs:
         uses: actions/checkout@v3
 
       # exemplo de execução no terminal
-      - name: instalar dependencias do projeto
+      - name: Instalar dependencias do projeto
         run: npm install
 
       # execução e config do projeto
       - name: Run testes
-        uses: cypres-io/github-actions@v5
+        uses: cypress-io/github-actions@v5
         with:
           record: true
         env:
