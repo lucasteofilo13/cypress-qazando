@@ -36,5 +36,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Relatório
-          path: cypress-qazando\cypress\reports\html 
-
+          path: cypress-qazando\cypress\reports\html
