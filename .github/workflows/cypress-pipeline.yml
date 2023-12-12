@@ -35,5 +35,5 @@ jobs:
       - name: upload relatorio
         uses: actions/upload-artifact@v3
         with:
-          name: Relatório
-          path: cypress-qazando\cypress\reports\html
+          name: Relatorio
+          path: cypress-qazando\cypress\reports\html 
